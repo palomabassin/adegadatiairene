@@ -57,4 +57,51 @@ export default function Home() {
       </footer>
     </div>
   );
+}import Image from "next/image";
+<Image
+  src="/logo/logo.png"
+  alt="Adega e Mercearia da Tia Irene"
+  width={180}
+  height={180}
+  priority
+/><Image
+  src="/banners/banner-principal.png"
+  alt="Banner Adega Tia Irene"
+  width={1920}
+  height={1080}
+  className="w-full h-auto rounded-3xl"
+/><Image
+  src="/produtos/bebidas.png"
+  alt="Bebidas"
+  width={400}
+  height={400}
+  className="rounded-2xl"
+/><section className="max-w-7xl mx-auto px-6 py-20">
+
+  <Image
+    src="/banners/banner-principal.png"
+    alt="Banner"
+    width={1920}
+    height={1080}
+    className="rounded-3xl"
+  />
+
+</section>app/globals.css
+body{
+  background:#000;
+  color:white;
 }
+
+.gold{
+  color:#d4af37;
+}
+
+.red{
+  color:#c1121f;
+}<a
+ href="https://wa.me/5511920082655"
+ target="_blank"
+ className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-black font-bold px-6 py-4 rounded-full shadow-2xl z-50"
+>
+ 📱 WhatsApp
+</a>
