@@ -8,13 +8,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <img 
-              src="/imagens/logo.png" 
+              src="/imagem/Logo.png" 
               alt="Tia Irene" 
               className="h-16 w-auto"
             />
             <div>
-              <h1 className="text-4xl font-bold tracking-tighter">Tia Irene</h1>
-              <p className="text-amber-400 text-sm -mt-1">ADEGA • MERCEARIA • DELIVERY</p>
+              <h1 className="text-4xl font-bold tracking-tighter text-amber-400">TIA IRENE</h1>
+              <p className="text-sm -mt-1">ADEGA • MERCEARIA • DELIVERY</p>
             </div>
           </div>
 
@@ -25,9 +25,9 @@ export default function Home() {
         </div>
       </header>
 
-      {/* BANNER PRINCIPAL COM SUA IMAGEM */}
+      {/* BANNER PRINCIPAL */}
       <section className="relative h-screen bg-cover bg-center flex items-center" 
-               style={{ backgroundImage: "url('/imagens/banner-principal.jpg')" }}>
+               style={{ backgroundImage: "url('/imagem/banner.png')" }}>
         <div className="absolute inset-0 bg-black/70"></div>
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
