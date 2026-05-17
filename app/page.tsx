@@ -1,56 +1,25 @@
-"use client";
-
-const categorias = [
-  {
-    nome: "Bebidas",
-    imagem: "https://i.imgur.com/5e8Q7bJ.png",
-  },
-  {
-    nome: "Mercearia",
-    imagem: "https://i.imgur.com/Y7sH2zK.png",
-  },
-  {
-    nome: "Congelados",
-    imagem: "https://i.imgur.com/p8zL2mQ.png",
-  },
-  {
-    nome: "Conveniência",
-    imagem: "https://i.imgur.com/Jx8T6hM.png",
-  },
-  {
-    nome: "Higiene",
-    imagem: "https://i.imgur.com/cV9fP1x.png",
-  },
-  {
-    nome: "Destilados",
-    imagem: "https://i.imgur.com/uW2xN8f.png",
-  },
-];
-
 export default function Home() {
   return (
-    <main className="bg-black text-white min-h-screen overflow-hidden">
+    <main className="bg-black min-h-screen text-white">
 
       {/* HEADER */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-black/95 backdrop-blur border-b border-amber-500/20">
-
+      <header className="border-b border-yellow-600 bg-black sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
           <div className="flex items-center gap-4">
-
             <img
-              src="https://i.imgur.com/7xQq7bD.png"
-              alt="Logo Tia Irene"
-              className="w-24 h-24 object-contain"
+              src="/logo.png"
+              alt="Tia Irene"
+              className="w-16 h-16 object-contain"
             />
 
             <div>
-              <h1 className="text-4xl font-black text-amber-400 leading-none">
+              <h1 className="text-3xl font-black text-yellow-400 tracking-wide">
                 TIA IRENE
               </h1>
 
-              <p className="text-zinc-300 tracking-[4px] text-sm">
-                ADEGA • MERCEARIA • DELIVERY
+              <p className="text-sm text-gray-300 tracking-[4px] uppercase">
+                Adega • Mercearia • Delivery
               </p>
             </div>
           </div>
@@ -58,103 +27,56 @@ export default function Home() {
           <a
             href="https://wa.me/5511920082655"
             target="_blank"
-            className="bg-green-500 hover:bg-green-600 transition px-8 py-4 rounded-full font-bold text-black text-lg shadow-lg"
+            className="bg-green-500 hover:bg-green-400 text-black font-bold px-6 py-3 rounded-full transition-all"
           >
             WhatsApp
           </a>
+
         </div>
       </header>
 
-      {/* HERO */}
-      <section
-        className="relative min-h-screen flex items-center bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://i.imgur.com/yM6KX9O.png')",
-        }}
-      >
-
-        <div className="absolute inset-0 bg-black/65"></div>
-
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pt-40">
-
-          <div className="max-w-3xl">
-
-            <h2 className="text-6xl md:text-8xl font-black leading-none">
-
-              <span className="text-white">
-                TUDO O QUE VOCÊ
-              </span>
-
-              <br />
-
-              <span className="text-amber-400">
-                PRECISA,
-              </span>
-
-              <br />
-
-              <span className="text-red-600 italic">
-                ENTREGUE RÁPIDO!
-              </span>
-            </h2>
-
-            <p className="mt-8 text-2xl text-zinc-300">
-              Adega e Mercearia da Tia Irene • Embu das Artes
-            </p>
-
-            <div className="flex gap-4 mt-10 flex-wrap">
-
-              <button className="bg-amber-400 hover:bg-amber-300 text-black px-10 py-5 rounded-full text-xl font-bold transition">
-                Ver Catálogo
-              </button>
-
-              <a
-                href="https://wa.me/5511920082655"
-                target="_blank"
-                className="border-2 border-white px-10 py-5 rounded-full text-xl font-bold hover:bg-white hover:text-black transition"
-              >
-                Fazer Pedido
-              </a>
-
-            </div>
-          </div>
-        </div>
+      {/* HERO BANNER */}
+      <section className="w-full">
+        <img
+          src="/banner.png"
+          alt="Banner Tia Irene"
+          className="w-full object-cover"
+        />
       </section>
 
       {/* BENEFÍCIOS */}
-      <section className="bg-zinc-950 border-y border-amber-500/20">
+      <section className="border-y border-yellow-700 bg-[#080808]">
 
-        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 px-6 py-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 px-4 py-6">
 
-          <div className="bg-zinc-900 rounded-3xl p-6 text-center border border-amber-500/20">
-            <div className="text-5xl mb-3">🚚</div>
+          <div className="bg-[#111] border border-yellow-700 rounded-2xl p-5 text-center">
+            <div className="text-4xl mb-2">🚚</div>
 
-            <h3 className="text-amber-400 font-bold text-2xl">
+            <h3 className="text-yellow-400 font-bold text-xl">
               Entrega Rápida
             </h3>
           </div>
 
-          <div className="bg-zinc-900 rounded-3xl p-6 text-center border border-amber-500/20">
-            <div className="text-5xl mb-3">💳</div>
+          <div className="bg-[#111] border border-yellow-700 rounded-2xl p-5 text-center">
+            <div className="text-4xl mb-2">💳</div>
 
-            <h3 className="text-amber-400 font-bold text-2xl">
+            <h3 className="text-yellow-400 font-bold text-xl">
               PIX e Cartão
             </h3>
           </div>
 
-          <div className="bg-zinc-900 rounded-3xl p-6 text-center border border-amber-500/20">
-            <div className="text-5xl mb-3">🛡️</div>
+          <div className="bg-[#111] border border-yellow-700 rounded-2xl p-5 text-center">
+            <div className="text-4xl mb-2">🛡️</div>
 
-            <h3 className="text-amber-400 font-bold text-2xl">
+            <h3 className="text-yellow-400 font-bold text-xl">
               Compra Segura
             </h3>
           </div>
 
-          <div className="bg-zinc-900 rounded-3xl p-6 text-center border border-amber-500/20">
-            <div className="text-5xl mb-3">📲</div>
+          <div className="bg-[#111] border border-yellow-700 rounded-2xl p-5 text-center">
+            <div className="text-4xl mb-2">📲</div>
 
-            <h3 className="text-amber-400 font-bold text-2xl">
+            <h3 className="text-yellow-400 font-bold text-xl">
               Atendimento WhatsApp
             </h3>
           </div>
@@ -163,63 +85,95 @@ export default function Home() {
       </section>
 
       {/* CATEGORIAS */}
-      <section className="py-24 bg-black">
+      <section className="max-w-7xl mx-auto px-6 py-16">
 
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-12">
 
-          <p className="text-center text-amber-400 tracking-[10px] mb-4 font-bold">
-            PRODUTOS
+          <p className="text-yellow-500 tracking-[8px] uppercase text-sm font-bold">
+            Produtos
           </p>
 
-          <h2 className="text-center text-7xl font-black mb-20">
-            CATEGORIAS
+          <h2 className="text-6xl font-black uppercase">
+            Categorias
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-
-            {categorias.map((item) => (
-              <div
-                key={item.nome}
-                className="group rounded-[35px] overflow-hidden bg-zinc-950 border border-amber-500/30 hover:scale-105 transition duration-300"
-              >
-
-                <img
-                  src={item.imagem}
-                  alt={item.nome}
-                  className="w-full h-[500px] object-cover"
-                />
-
-              </div>
-            ))}
-
-          </div>
         </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+
+          <Categoria
+            imagem="/produtos/bebidas.png"
+            titulo="Bebidas"
+          />
+
+          <Categoria
+            imagem="/produtos/mercearia.png"
+            titulo="Mercearia"
+          />
+
+          <Categoria
+            imagem="/produtos/congelados.png"
+            titulo="Congelados"
+          />
+
+          <Categoria
+            imagem="/produtos/conveniencia.png"
+            titulo="Conveniência"
+          />
+
+          <Categoria
+            imagem="/produtos/higiene.png"
+            titulo="Higiene"
+          />
+
+          <Categoria
+            imagem="/produtos/destilados.png"
+            titulo="Destilados"
+          />
+
+        </div>
+
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-amber-500/20 bg-black py-10">
+      <footer className="border-t border-yellow-700 py-8 text-center text-gray-400">
 
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+        <p className="text-lg">
+          © Tia Irene Delivery
+        </p>
 
-          <div className="flex items-center gap-3 text-amber-400 font-bold text-2xl">
-            👑 Tia Irene Delivery
-          </div>
+        <p className="mt-2">
+          Chama no WhatsApp e faça seu pedido!
+        </p>
 
-          <div className="text-zinc-400 text-lg">
-            Chama no WhatsApp e faça seu pedido!
-          </div>
-
-          <a
-            href="https://wa.me/5511920082655"
-            target="_blank"
-            className="bg-green-500 hover:bg-green-600 transition px-8 py-4 rounded-full font-bold text-black text-xl"
-          >
-            WhatsApp
-          </a>
-
-        </div>
       </footer>
 
     </main>
+  );
+}
+
+function Categoria({
+  imagem,
+  titulo,
+}: {
+  imagem: string;
+  titulo: string;
+}) {
+  return (
+    <div className="group bg-[#0b0b0b] border border-yellow-700 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300">
+
+      <img
+        src={imagem}
+        alt={titulo}
+        className="w-full object-cover"
+      />
+
+      <div className="p-4">
+        <h3 className="text-center text-2xl font-black uppercase text-white">
+          {titulo}
+        </h3>
+      </div>
+
+    </div>
   );
 }
