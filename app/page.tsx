@@ -13,12 +13,12 @@ export default function Home() {
               className="h-16 w-auto"
             />
             <div>
-              <h1 className="text-4xl font-bold tracking-tighter">Tia Irene</h1>
-              <p className="text-amber-400 text-sm -mt-1">ADEGA • MERCEARIA • DELIVERY</p>
+              <h1 className="text-4xl font-bold tracking-tighter text-amber-400">TIA IRENE</h1>
+              <p className="text-sm -mt-1 text-red-500">ADEGA • MERCEARIA • DELIVERY</p>
             </div>
           </div>
 
-          <nav className="hidden md:flex gap-10 text-lg font-medium">
+          <nav className="hidden md:flex gap-8 text-lg font-medium">
             <a href="#" className="hover:text-amber-400 transition">Início</a>
             <a href="#" className="hover:text-amber-400 transition">Loja</a>
             <a href="#" className="hover:text-amber-400 transition">Promoções</a>
@@ -35,11 +35,11 @@ export default function Home() {
       {/* BANNER PRINCIPAL */}
       <section className="relative h-screen bg-cover bg-center flex items-center" 
                style={{ backgroundImage: "url('/imagem/banner.png')" }}>
-        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-black/75"></div>
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="max-w-2xl">
-            <h1 className="text-6xl md:text-7xl font-bold leading-none mb-6">
+            <h1 className="text-6xl md:text-7xl font-bold leading-none mb-6 text-white">
               TUDO QUE VOCÊ PRECISA,<br/>
               <span className="text-amber-400">ENTREGUE RÁPIDO</span>
             </h1>
@@ -60,7 +60,7 @@ export default function Home() {
 
       <footer className="bg-black py-12 text-center text-zinc-400">
         <p className="text-xl">Adega e Mercearia da Tia Irene Delivery</p>
-        <p>(11) 92008-2655 • Embu das Artes - SP</p>
+        <p>(11) 92008-2655 • Rua Dezoito de Julho, 79 - Embu das Artes - SP</p>
       </footer>
     </div>
   );
