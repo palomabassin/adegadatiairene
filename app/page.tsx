@@ -3,43 +3,45 @@
 const categorias = [
   {
     nome: "Bebidas",
-    imagem: "https://i.imgur.com/6l0mG7L.png",
+    imagem: "https://i.imgur.com/5e8Q7bJ.png",
   },
   {
     nome: "Mercearia",
-    imagem: "https://i.imgur.com/yQ7Yk7m.png",
+    imagem: "https://i.imgur.com/Y7sH2zK.png",
   },
   {
     nome: "Congelados",
-    imagem: "https://i.imgur.com/VQh8YjM.png",
+    imagem: "https://i.imgur.com/p8zL2mQ.png",
   },
   {
     nome: "Conveniência",
-    imagem: "https://i.imgur.com/5hM3M0f.png",
+    imagem: "https://i.imgur.com/Jx8T6hM.png",
   },
   {
     nome: "Higiene",
-    imagem: "https://i.imgur.com/G1l7c2V.png",
+    imagem: "https://i.imgur.com/cV9fP1x.png",
   },
   {
     nome: "Destilados",
-    imagem: "https://i.imgur.com/0d8K6wM.png",
+    imagem: "https://i.imgur.com/uW2xN8f.png",
   },
 ];
 
 export default function Home() {
   return (
-    <main className="bg-black text-white min-h-screen">
+    <main className="bg-black text-white min-h-screen overflow-hidden">
 
       {/* HEADER */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur border-b border-amber-500/20">
+      <header className="fixed top-0 left-0 w-full z-50 bg-black/95 backdrop-blur border-b border-amber-500/20">
+
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
           <div className="flex items-center gap-4">
+
             <img
-              src="https://i.imgur.com/6u7lB7F.png"
-              alt="Logo"
-              className="w-20 h-20 object-contain"
+              src="https://i.imgur.com/7xQq7bD.png"
+              alt="Logo Tia Irene"
+              className="w-24 h-24 object-contain"
             />
 
             <div>
@@ -68,16 +70,18 @@ export default function Home() {
         className="relative min-h-screen flex items-center bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://i.imgur.com/Q0L1j2A.jpeg')",
+            "url('https://i.imgur.com/yM6KX9O.png')",
         }}
       >
-        <div className="absolute inset-0 bg-black/70"></div>
+
+        <div className="absolute inset-0 bg-black/65"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 pt-40">
 
           <div className="max-w-3xl">
 
             <h2 className="text-6xl md:text-8xl font-black leading-none">
+
               <span className="text-white">
                 TUDO O QUE VOCÊ
               </span>
@@ -125,6 +129,7 @@ export default function Home() {
 
           <div className="bg-zinc-900 rounded-3xl p-6 text-center border border-amber-500/20">
             <div className="text-5xl mb-3">🚚</div>
+
             <h3 className="text-amber-400 font-bold text-2xl">
               Entrega Rápida
             </h3>
@@ -132,6 +137,7 @@ export default function Home() {
 
           <div className="bg-zinc-900 rounded-3xl p-6 text-center border border-amber-500/20">
             <div className="text-5xl mb-3">💳</div>
+
             <h3 className="text-amber-400 font-bold text-2xl">
               PIX e Cartão
             </h3>
@@ -139,6 +145,7 @@ export default function Home() {
 
           <div className="bg-zinc-900 rounded-3xl p-6 text-center border border-amber-500/20">
             <div className="text-5xl mb-3">🛡️</div>
+
             <h3 className="text-amber-400 font-bold text-2xl">
               Compra Segura
             </h3>
@@ -146,6 +153,7 @@ export default function Home() {
 
           <div className="bg-zinc-900 rounded-3xl p-6 text-center border border-amber-500/20">
             <div className="text-5xl mb-3">📲</div>
+
             <h3 className="text-amber-400 font-bold text-2xl">
               Atendimento WhatsApp
             </h3>
